@@ -204,7 +204,7 @@ def make_plots(data_dict, max_events, normed_img, pred_dict):
         if segment != -1 and planecode != -1:
             title_string = title_string + ', segment {}, planecode {}'
             title_elems.extend([segment, planecode])
-            if planecode in target_plane_codes.keys():
+            if planecode in tuple(target_plane_codes.keys()):
                 title_string = title_string + ', targ {}'
                 title_elems.append(target_plane_codes[planecode[0]])
         if n_hadmultmeas != -1:
@@ -317,7 +317,7 @@ def make_plots_seg(data_dict, max_events, normed_img, pred_dict):
             if segment != -1 and planecode != -1:
                 title_string = title_string + ', segment {}, planecode {}'
                 title_elems.extend([segment, planecode])
-                if planecode in target_plane_codes.keys():
+                if planecode in tuple(target_plane_codes.keys()):
                     title_string = title_string + ', targ {}'
                     title_elems.append(target_plane_codes[planecode[0]])
             if n_hadmultmeas != -1:

@@ -5,17 +5,17 @@ import os
 import shutil
 import gzip
 
-from data_readers import MnvDataReaderImageST
-from data_readers import MnvDataReaderVertexST
-from data_readers import MnvDataReaderHamultKineST
-from data_readers import MnvDataReaderSegmentST
-from data_constants import HADMULTKINE_GROUPS_DICT, HADMULTKINE_TYPE
-from data_constants import VTXFINDING_GROUPS_DICT, VTXFINDING_TYPE
-from data_constants import IMGING_GROUPS_DICT, IMGING_TYPE
-from data_constants import SEGMENTATION_GROUPS_DICT, SEGMENTATION_TYPE
-from models_tricolumnar import TriColSTEpsilon
-from models_tricolumnar import make_default_convpooldict
-from models_menagerie import make_menndl_633167
+from mnvtf.data_readers import MnvDataReaderImageST
+from mnvtf.data_readers import MnvDataReaderVertexST
+from mnvtf.data_readers import MnvDataReaderHamultKineST
+from mnvtf.data_readers import MnvDataReaderSegmentST
+from mnvtf.data_constants import HADMULTKINE_GROUPS_DICT, HADMULTKINE_TYPE
+from mnvtf.data_constants import VTXFINDING_GROUPS_DICT, VTXFINDING_TYPE
+from mnvtf.data_constants import IMGING_GROUPS_DICT, IMGING_TYPE
+from mnvtf.data_constants import SEGMENTATION_GROUPS_DICT, SEGMENTATION_TYPE
+from mnvtf.models_tricolumnar import TriColSTEpsilon
+from mnvtf.models_tricolumnar import make_default_convpooldict
+from mnvtf.models_menagerie import make_menndl_633167
 
 LOGGER = logging.getLogger(__name__)
 

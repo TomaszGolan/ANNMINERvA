@@ -2,17 +2,17 @@
 from collections import OrderedDict
 import tensorflow as tf
 
-from data_constants import EVENTIDS, PLANECODES, SEGMENTS, ZS
-from data_constants import HITIMESU, HITIMESV, HITIMESX
-from data_constants import QSQRD, WINV, XBJ, YBJ, CURRENT, INT_TYPE, TARGETZ
-from data_constants import ESUM_CHGDKAONS, ESUM_CHGDPIONS, ESUM_HADMULTMEAS
-from data_constants import ESUM_NEUTPIONS, ESUM_NEUTRONS
-from data_constants import ESUM_OTHERS, ESUM_PROTONS
-from data_constants import N_CHGDKAONS, N_CHGDPIONS, N_HADMULTMEAS
-from data_constants import N_NEUTPIONS, N_NEUTRONS
-from data_constants import N_OTHERS, N_PROTONS
-from data_constants import ESUM_ELECTRONS, ESUM_MUONS, ESUM_TAUS
-from data_constants import N_ELECTRONS, N_MUONS, N_TAUS
+from mnvtf.data_constants import EVENTIDS, PLANECODES, SEGMENTS, ZS
+from mnvtf.data_constants import HITIMESU, HITIMESV, HITIMESX
+from mnvtf.data_constants import QSQRD, WINV, XBJ, YBJ, CURRENT, INT_TYPE, TARGETZ
+from mnvtf.data_constants import ESUM_CHGDKAONS, ESUM_CHGDPIONS, ESUM_HADMULTMEAS
+from mnvtf.data_constants import ESUM_NEUTPIONS, ESUM_NEUTRONS
+from mnvtf.data_constants import ESUM_OTHERS, ESUM_PROTONS
+from mnvtf.data_constants import N_CHGDKAONS, N_CHGDPIONS, N_HADMULTMEAS
+from mnvtf.data_constants import N_NEUTPIONS, N_NEUTRONS
+from mnvtf.data_constants import N_OTHERS, N_PROTONS
+from mnvtf.data_constants import ESUM_ELECTRONS, ESUM_MUONS, ESUM_TAUS
+from mnvtf.data_constants import N_ELECTRONS, N_MUONS, N_TAUS
 
 
 class MnvTFRecordReaderBase:

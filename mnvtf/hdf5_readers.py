@@ -27,7 +27,7 @@ class MnvHDF5Reader:
         self._f = h5py.File(self.file, 'r')
         for group in self._f:
             for dset in self._f[group]:
-                LOGGER.info('{:>12}/{:>12}: {:>8}: shape = {}'.format(
+                LOGGER.info('{:>12}/{:>12}: {}: shape = {}'.format(
                     group, dset,
                     np.dtype(self._f[group][dset]),
                     np.shape(self._f[group][dset])
@@ -75,18 +75,18 @@ def test():
     reader = MnvHDF5Reader(path + filen)
     try:
         reader.open()
-        print reader.get_data('eventids', 0, 10)
+        print(reader.get_data('eventids', 0, 10))
         try:
-            print reader.get_data('n_taus', 0, 10)
+            print(reader.get_data('n_taus', 0, 10))
         except ValueError:
-            print 'n_taus is not stored here.'
+            print('n_taus is not stored here.')
         try:
-            print reader.get_data('n_rainbow_unicorns', 0, 10)
+            print(reader.get_data('n_rainbow_unicorns', 0, 10))
         except ValueError:
-            print 'of course there are no unicorns here.'
+            print('of course there are no unicorns here.')
         reader.close()
     except IOError:
-        print 'hdf5 file not found'
+        print('hdf5 file not found')
 
 
 if __name__ == '__main__':

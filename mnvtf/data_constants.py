@@ -89,10 +89,10 @@ SEGMENTATION_GROUPS_DICT = {
 SEGMENTATION_TYPE = "segmentation"
 
 VALID_SET_OF_GROUPS = set(
-    HADMULTKINE_GROUPS_DICT.keys() +
-    VTXFINDING_GROUPS_DICT.keys() +
-    IMGING_GROUPS_DICT.keys() +
-    SEGMENTATION_GROUPS_DICT.keys()
+    tuple(HADMULTKINE_GROUPS_DICT.keys()) +
+    tuple(VTXFINDING_GROUPS_DICT.keys()) +
+    tuple(IMGING_GROUPS_DICT.keys()) +
+    tuple(SEGMENTATION_GROUPS_DICT.keys())
 )
 
 
